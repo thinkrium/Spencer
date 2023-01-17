@@ -523,6 +523,19 @@ Robot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/build
 .PHONY : Robot/fast
 
+#=============================================================================
+# Target rules for targets named Brain
+
+# Build rule for target.
+Brain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Brain
+.PHONY : Brain
+
+# fast build rule for target.
+Brain/fast:
+	$(MAKE) $(MAKESILENT) -f Systems/CMakeFiles/Brain.dir/build.make Systems/CMakeFiles/Brain.dir/build
+.PHONY : Brain/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -586,6 +599,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... Brain"
 	@echo "... Robot"
 	@echo "... main.o"
 	@echo "... main.i"

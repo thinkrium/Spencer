@@ -117,14 +117,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build/CMakeFiles /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build/Systems//CMakeFiles/progress.marks
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/all
+	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build/CMakeFiles /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build/Systems/Brain//CMakeFiles/progress.marks
+	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/Brain/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/clean
+	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/Brain/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,32 +133,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/preinstall
+	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/Brain/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/preinstall
+	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/Brain/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
 	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-Systems/CMakeFiles/Brain.dir/rule:
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Systems/CMakeFiles/Brain.dir/rule
-.PHONY : Systems/CMakeFiles/Brain.dir/rule
-
-# Convenience name for target.
-Brain: Systems/CMakeFiles/Brain.dir/rule
-.PHONY : Brain
-
-# fast build rule for target.
-Brain/fast:
-	cd /home/thomedy/Thinkrium/Robotics/SourceCode/Spencer/Operating_System/Spencer/build && $(MAKE) $(MAKESILENT) -f Systems/CMakeFiles/Brain.dir/build.make Systems/CMakeFiles/Brain.dir/build
-.PHONY : Brain/fast
 
 # Help Target
 help:
@@ -171,7 +157,6 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Brain"
 .PHONY : help
 
 

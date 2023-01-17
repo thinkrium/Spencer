@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBrain.a CMakeFiles/Brain.dir/Brain/Source/Base.cpp.o
+/usr/bin/ranlib libBrain.a
