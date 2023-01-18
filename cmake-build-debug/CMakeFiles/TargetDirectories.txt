@@ -1,0 +1,3 @@
+C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/CMakeFiles/Spencer.dir
+C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
