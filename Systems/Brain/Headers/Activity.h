@@ -9,15 +9,13 @@
 
 namespace Systems {
     namespace Brain {
-        class Activity : public Base {
-        public:
-            Activity() {}
+        class Activity {
+            public:
+                static void Run(Base runnable_object);
 
-            virtual ~Activity() {
-
-            }
         };
     }
+}
 
 }
 #endif //SPENCER_ACTIVITY_H

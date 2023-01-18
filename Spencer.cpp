@@ -1,6 +1,9 @@
 #include <iostream>
+#include "Brain/Headers/Activity.h"
+using namespace Systems::Brain;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Systems::Brain::Activity
     return 0;
 }
