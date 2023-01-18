@@ -8,6 +8,9 @@
 
 void Systems::Brain::Activity::Run( ) {
   cout << "Running" << endl;
+  Activate_Thinking();
+  Activate_Motion();
+  Activate_Vision();
 }
 
 void Systems::Brain::Activity::Activate_Vision() {
@@ -15,5 +18,9 @@ void Systems::Brain::Activity::Activate_Vision() {
 }
 
 void Systems::Brain::Activity::Activate_Motion() {
+
+}
+
+void Systems::Brain::Activity::Activate_Thinking() {
 
 }
