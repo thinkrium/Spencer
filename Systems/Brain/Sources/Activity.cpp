@@ -7,5 +7,13 @@
 
 
 void Systems::Brain::Activity::Run( ) {
+  cout << "Running" << endl;
+}
+
+void Systems::Brain::Activity::Activate_Vision() {
+
+}
+
+void Systems::Brain::Activity::Activate_Motion() {
 
 }

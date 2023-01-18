@@ -1,3 +1,8 @@
 # ninja log v5
 1	554	6957739895758015	CMakeFiles/Spencer.dir/Spencer.cpp.obj	bf629290d7c7a90e
 562	796	6957739898099653	Spencer.exe	f74598d3a255f427
+12	143	6957555650266451	CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj	cecd48dae69f1aec
+144	263	6957555651503968	CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj	7edb4e91ae7408c1
+6	561	6957555852841837	CMakeFiles/Spencer.dir/Spencer.cpp.obj	b534805303690164
+11	564	6957555852852185	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	f98b93d68a91c513
+565	753	6957555854773586	Spencer.exe	3057dbcb96504c73
