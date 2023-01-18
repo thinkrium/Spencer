@@ -52,23 +52,30 @@ build cmake_object_order_depends_target_Spencer: phony || CMakeFiles/Spencer.dir
 build CMakeFiles/Spencer.dir/Spencer.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Spencer.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Spencer.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Headers" -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
+  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir
 
 build CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Sources/Base.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Systems\Base\Sources\Base.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Headers" -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
+  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Base\Sources
 
 build CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Brain/Sources/Activity.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Systems\Brain\Sources\Activity.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Headers" -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
+  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Brain\Sources
+
+build CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Vision/Sources/Vision.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Vision\Sources\Vision.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems"
+  OBJECT_DIR = CMakeFiles\Spencer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Vision\Sources
 
 
 # =============================================================================
@@ -78,7 +85,7 @@ build CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj: CXX_COMPILE
 #############################################
 # Link the executable Spencer.exe
 
-build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj
+build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Spencer.dir

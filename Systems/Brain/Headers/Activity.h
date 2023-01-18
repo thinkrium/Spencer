@@ -10,9 +10,11 @@
 namespace Systems {
     namespace Brain {
         class Activity {
-            public:
-                static void Run(Base runnable_object);
 
+            public:
+                static void Run();
+                void Activate_Vision();
+                void Activate_Motion();
         };
     }
 }

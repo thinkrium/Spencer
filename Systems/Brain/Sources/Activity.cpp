@@ -6,6 +6,6 @@
 
 
 
-void Systems::Brain::Activity::Run(Systems::Base runnable_object) {
-   runnable_object.Runnable();
+void Systems::Brain::Activity::Run( ) {
+
 }

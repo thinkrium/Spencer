@@ -4,6 +4,6 @@ using namespace Systems::Brain;
 
 int main() {
 
-    Systems::Brain::Activity
+    Systems::Brain::Activity::Run( );
     return 0;
 }
