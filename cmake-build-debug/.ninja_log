@@ -1,6 +1,22 @@
 # ninja log v5
-6	561	6957555852841837	CMakeFiles/Spencer.dir/Spencer.cpp.obj	b534805303690164
-565	753	6957555854773586	Spencer.exe	3057dbcb96504c73
+7	634	6957678066689559	CMakeFiles/Spencer.dir/Spencer.cpp.obj	b534805303690164
+665	811	6957678068437899	Spencer.exe	9207f818076eec6d
 12	143	6957555650266451	CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj	cecd48dae69f1aec
 144	263	6957555651503968	CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj	7edb4e91ae7408c1
-11	564	6957555852852185	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	f98b93d68a91c513
+19	665	6957678066779812	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	f98b93d68a91c513
+13	150	6957678061870302	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	b9cca48f207baee9
+13	171	6957706060946117	CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj	54d320c250358b1f
+172	273	6957706061951244	CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj	2d5a5c7cc6eecb94
+273	382	6957706063011149	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
+23	835	6957706067610419	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
+7	926	6957706068436376	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
+383	2536	6957706084587886	CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj	8d93d28236ca00f6
+927	3496	6957706094198434	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	9ca697365d55b9c7
+835	5452	6957706113718610	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	e7b127f30d6f799e
+3497	5532	6957706114577698	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	490177db7cedea2f
+2538	11018	6957706169319496	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	e74af6d211100b25
+11021	13369	6957706192955064	lib/libgtestd.a	9fb84adcfb6e5595
+13374	13483	6957706194074106	lib/libgtest_maind.a	b0bc46150c54ef29
+13483	13640	6957706195611651	Spencer.exe	9a479824e45c9147
+13370	13830	6957706197566845	lib/libgmockd.a	4ffc92d9acdafe1c
+13830	13914	6957706198409586	lib/libgmock_maind.a	7846dbbce6654610

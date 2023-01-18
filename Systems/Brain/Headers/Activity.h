@@ -16,12 +16,6 @@ namespace Systems {
     namespace Brain {
         class Activity {
 
-            private:
-
-                Vision vision;
-
-                Motion motion;
-
             public:
 
                 /**

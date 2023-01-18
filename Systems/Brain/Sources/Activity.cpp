@@ -14,11 +14,11 @@ void Systems::Brain::Activity::Run( ) {
 }
 
 void Systems::Brain::Activity::Activate_Vision() {
-
+    Systems::Vision vision;
 }
 
 void Systems::Brain::Activity::Activate_Motion() {
-
+    Systems::Motion motion;
 }
 
 void Systems::Brain::Activity::Activate_Thinking() {
