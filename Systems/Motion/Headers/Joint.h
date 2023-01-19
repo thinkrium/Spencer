@@ -3,18 +3,24 @@
 //
 
 #ifndef SPENCER_JOINT_H
+#define SPENCER_JOINT_H
+
+#include <iostream>
+#include "Motion_Base.h"
+
+using namespace std;
 
 namespace Systems {
     namespace Motion {
-        class Joint {
-        public:
-            Joint();
+        class Joint : public Motion_Base {
 
-            virtual ~Joint();
+            public:
+                Joint();
+
+                virtual ~Joint();
         };
     }
 }
 
-#define SPENCER_JOINT_H
 
 #endif //SPENCER_JOINT_H

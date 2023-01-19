@@ -1,16 +1,18 @@
 # ninja log v5
-7	926	6957706068436376	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
-685	991	6957830575055885	Spencer.exe	9a479824e45c9147
-13	171	6957706060946117	CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj	54d320c250358b1f
+22	692	6957994073086044	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
+1288	1479	6957994080900204	Spencer.exe	ad8c63f0c092c668
+692	1288	6957994079049005	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motor.cpp.obj	d8fa3eb4b240c4df
+835	5452	6957706113718610	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	e7b127f30d6f799e
 172	273	6957706061951244	CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj	2d5a5c7cc6eecb94
-9	684	6957830572033647	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
+36	860	6957994074621597	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
 383	2536	6957706084587886	CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj	8d93d28236ca00f6
 273	382	6957706063011149	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
 927	3496	6957706094198434	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	9ca697365d55b9c7
-835	5452	6957706113718610	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	e7b127f30d6f799e
 3497	5532	6957706114577698	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	490177db7cedea2f
 2538	11018	6957706169319496	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	e74af6d211100b25
 11021	13369	6957706192955064	lib/libgtestd.a	9fb84adcfb6e5595
 13830	13914	6957706198409586	lib/libgmock_maind.a	7846dbbce6654610
 13374	13483	6957706194074106	lib/libgtest_maind.a	b0bc46150c54ef29
 13370	13830	6957706197566845	lib/libgmockd.a	4ffc92d9acdafe1c
+192	909	6957994075273546	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Joint.cpp.obj	f894bf8b7d03a2f4
+27	191	6957994068023002	CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj	bcff9f0a51e9bc34

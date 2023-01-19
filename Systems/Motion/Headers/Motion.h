@@ -9,10 +9,10 @@ namespace Systems {
 
     class Motion {
 
-    public:
-        Motion();
+        public:
+            Motion();
 
-        virtual ~Motion();
-    };
+            virtual ~Motion();
+        };
 }
 #endif //SPENCER_MOTION_H
