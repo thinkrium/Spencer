@@ -81,3 +81,7 @@
 786	912	6958397255440004	lib/libgmock_maind.a	7846dbbce6654610
 20	1076	6958397257071359	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
 1076	1272	6958397258961175	Spencer.exe	baa87118c75b4e35
+7	769	6958407888090308	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
+13	879	6958407889219209	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
+16	1153	6958407891955340	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
+1154	1383	6958407894209234	Spencer.exe	baa87118c75b4e35

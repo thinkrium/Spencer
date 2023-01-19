@@ -22,6 +22,20 @@ namespace Systems {
             public:
 
                 /**
+                 * Gets a single body part by name
+                 * @param bodyPartName
+                 * @return
+                 */
+                Body_Part getBodyPart(string bodyPartName);
+
+                /**
+                 * sets a single body part by name
+                 * @param bodyPartName
+                 * @param bodyPart
+                 */
+                void setBodyPart(string bodyPartName, Body_Part bodyPart);
+
+                /**
                  * Gets the list of named body parts
                  * @return
                  */
