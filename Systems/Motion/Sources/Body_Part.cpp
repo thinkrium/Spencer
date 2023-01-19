@@ -9,7 +9,7 @@ Systems::Movement::Body_Part::Body_Part(const std::__cxx11::basic_string<char> &
                                       const std::__cxx11::basic_string<char> &type, int id) : Motion_Base(name, type,
                                                                                                           id) {}
 
-Systems::Movement::Body_Part::Body_Part() {}
+Systems::Movement::Body_Part::Body_Part() {    cout << "Setting Body part" << endl;}
 
 Systems::Movement::Body_Part::~Body_Part() {
 

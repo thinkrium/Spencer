@@ -20,12 +20,13 @@ namespace Systems {
                    */
                   map<string, Body_Part> body_parts;
             public:
+            virtual ~Motion();
 
-                /**
-                 * Gets a single body part by name
-                 * @param bodyPartName
-                 * @return
-                 */
+            /**
+             * Gets a single body part by name
+             * @param bodyPartName
+             * @return
+             */
                 Body_Part getBodyPart(string bodyPartName);
 
                 /**

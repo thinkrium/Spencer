@@ -31,3 +31,7 @@ int Systems::Movement::Motion_Base::getId() const {
 void Systems::Movement::Motion_Base::setId(int id) {
     Motion_Base::id = id;
 }
+
+Systems::Movement::Motion_Base::~Motion_Base() {
+
+}
