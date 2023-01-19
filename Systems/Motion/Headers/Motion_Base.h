@@ -13,27 +13,34 @@ namespace Systems {
         class Motion_Base {
 
             private:
+
+                // Name of this part
                 string name;
+
+                // Type of part involved
+                //
+                // helpful in scenarios like motors
                 string type;
+
+                // part id
                 int id;
-        public:
-            const string &getName() const;
 
-            void setName(const string &name);
+            public:
+                const string &getName() const;
 
-            const string &getType() const;
+                void setName(const string &name);
 
-            void setType(const string &type);
+                const string &getType() const;
 
-            int getId() const;
+                void setType(const string &type);
 
-            void setId(int id);
+                int getId() const;
 
-        public:
-            Motion_Base(const string &name, const string &type, int id);
+                void setId(int id);
 
-        public:
-            Motion_Base();
+                Motion_Base(const string &name, const string &type, int id);
+
+                Motion_Base();
         };
     }
     

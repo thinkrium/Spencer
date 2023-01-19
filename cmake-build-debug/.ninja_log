@@ -16,3 +16,11 @@
 13370	13830	6957706197566845	lib/libgmockd.a	4ffc92d9acdafe1c
 192	909	6957994075273546	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Joint.cpp.obj	f894bf8b7d03a2f4
 27	191	6957994068023002	CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj	bcff9f0a51e9bc34
+27	186	6958371069266064	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
+15	745	6958371074846174	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
+21	777	6958371075120938	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
+186	1100	6958371078407831	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Joint.cpp.obj	f894bf8b7d03a2f4
+778	1443	6958371081849234	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motor.cpp.obj	d8fa3eb4b240c4df
+745	1497	6958371082408772	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion_Base.cpp.obj	2e1e46e13c50a5
+1101	1829	6958371085730352	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Body_Part.cpp.obj	ee6b0522e966a416
+1830	2257	6958371089972180	Spencer.exe	baa87118c75b4e35

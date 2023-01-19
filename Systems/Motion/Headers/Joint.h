@@ -6,13 +6,22 @@
 #define SPENCER_JOINT_H
 
 #include <iostream>
+#include <map>
 #include "Motion_Base.h"
+#include "Motor.h"
 
 using namespace std;
 
 namespace Systems {
     namespace Motion {
         class Joint : public Motion_Base {
+
+            private:
+
+            /**
+            * named list of motors
+            */
+            map<string, Motor> motors;
 
             public:
                 Joint();
