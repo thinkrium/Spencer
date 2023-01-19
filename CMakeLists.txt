@@ -3,7 +3,7 @@ project(Spencer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Spencer  Spencer.cpp Systems/Base/Headers/Base.h Systems/Base/Sources/Base.cpp Systems/Brain/Headers/Activity.h Systems/Brain/Sources/Activity.cpp Systems/Vision/Headers/Vision.h Systems/Vision/Sources/Vision.cpp Systems/Motion/Headers/Motion.h Systems/Motion/Sources/Motion.cpp Tests/BaseTests.cpp)
+add_executable(Spencer  Spencer.cpp Systems/Base/Headers/Base.h Systems/Base/Sources/Base.cpp Systems/Brain/Headers/Activity.h Systems/Brain/Sources/Activity.cpp Systems/Vision/Headers/Vision.h Systems/Vision/Sources/Vision.cpp Systems/Motion/Headers/Motion.h Systems/Motion/Sources/Motion.cpp Tests/BaseTests.cpp Systems/Motion/Headers/Joint.h Systems/Motion/Headers/Motor.h Systems/Motion/Sources/Joint.cpp Systems/Motion/Sources/Motor.cpp)
 
 target_include_directories(Spencer PUBLIC  Systems)
 

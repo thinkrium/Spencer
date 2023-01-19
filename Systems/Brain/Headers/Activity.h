@@ -35,6 +35,11 @@ namespace Systems {
                 static void Activate_Vision();
 
                 /**
+                 * Activates the vision system
+                 */
+                static void Activate_Hearing();
+
+                /**
                  * Activates the Motion system
                  */
                 static void Activate_Motion();
