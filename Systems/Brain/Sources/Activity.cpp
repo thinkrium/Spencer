@@ -3,7 +3,7 @@
 //
 
 #include "Brain/Headers/Activity.h"
-
+#include "Motion/Headers/Motion.h"
 
 
 void Systems::Brain::Activity::Run( ) {
@@ -21,7 +21,7 @@ void Systems::Brain::Activity::Activate_Vision() {
 
 void Systems::Brain::Activity::Activate_Motion() {
     cout << "Activating Motion System." << endl;
-    Systems::Motion motion;
+    Systems::Movement::Motion motion;
 }
 
 void Systems::Brain::Activity::Activate_Thinking() {

@@ -1,14 +1,14 @@
 //
 // Created by Thom on 1/18/2023.
 //
+
+#ifndef SPENCER_MOTION_BASE_H
+#define SPENCER_MOTION_BASE_H
 #include <iostream>
 
 using namespace std;
-#ifndef SPENCER_MOTION_BASE_H
-#define SPENCER_MOTION_BASE_H
-
 namespace Systems {
-    namespace Motion {
+    namespace Movement {
         
         class Motion_Base {
 

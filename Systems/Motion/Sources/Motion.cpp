@@ -3,8 +3,6 @@
 //
 // Created by Thom on 1/18/2023.
 //
-Systems::Motion::Motion() {}
+Systems::Movement::Motion::Motion(const map<string, Body_Part> &bodyParts) : body_parts(bodyParts) {}
 
-Systems::Motion::~Motion() {
-
-}
+Systems::Movement::Motion::Motion() {}

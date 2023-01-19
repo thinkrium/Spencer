@@ -3,8 +3,8 @@
 //
 // Created by Thom on 1/18/2023.
 //
-Systems::Motion::Joint::Joint() {}
+Systems::Movement::Joint::Joint() {}
 
-Systems::Motion::Joint::~Joint() {
+Systems::Movement::Joint::~Joint() {
 
 }

@@ -5,14 +5,22 @@
 #ifndef SPENCER_MOTION_H
 #define SPENCER_MOTION_H
 
+#include <iostream>
+#include "Body_Part.h"
+
+using namespace std;
 namespace Systems {
+    namespace Movement {
+        class Motion {
 
-    class Motion {
+            private:
 
-        public:
+                map<string, Body_Part> body_parts;
+            public:
             Motion();
 
-            virtual ~Motion();
+            explicit Motion(const map<string, Body_Part> &bodyParts);
         };
+    }
 }
 #endif //SPENCER_MOTION_H

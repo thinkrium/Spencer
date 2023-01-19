@@ -3,8 +3,8 @@
 //
 // Created by Thom on 1/18/2023.
 //
-Systems::Motion::Motor::Motor() {}
+Systems::Movement::Motor::Motor() {}
 
-Systems::Motion::Motor::~Motor() {
+Systems::Movement::Motor::~Motor() {
 
 }

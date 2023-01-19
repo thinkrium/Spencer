@@ -10,7 +10,7 @@ using namespace std;
 #include "Motion_Base.h"
 
 namespace Systems {
-    namespace Motion {
+    namespace Movement {
         class Motor : public Motion_Base {
        public:
                virtual ~Motor();

@@ -13,7 +13,7 @@
 using namespace std;
 
 namespace Systems {
-    namespace Motion {
+    namespace Movement {
         class Joint : public Motion_Base {
 
             private:
