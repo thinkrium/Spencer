@@ -15,11 +15,34 @@ namespace Systems {
 
             private:
 
-                map<string, Body_Part> body_parts;
+                  /**
+                   * List of named body parts
+                   */
+                  map<string, Body_Part> body_parts;
             public:
-            Motion();
 
-            explicit Motion(const map<string, Body_Part> &bodyParts);
+                /**
+                 * Gets the list of named body parts
+                 * @return
+                 */
+                const map<string, Body_Part> &getBodyParts() const;
+
+                /**
+                 * Sets the list of named body parts
+                 * @param bodyParts
+                 */
+                void setBodyParts(const map<string, Body_Part> &bodyParts);
+
+                /**
+                 * Creates an empty motion object
+                 */
+                Motion();
+
+                /**
+                 * Creates a motion object with the list of body parts to move
+                 * @param bodyParts
+                 */
+                explicit Motion(const map<string, Body_Part> &bodyParts);
         };
     }
 }
