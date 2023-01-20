@@ -25,7 +25,7 @@ namespace Utilities {
         void Warning(string param_message);
         void Error(string param_message);
         void Fatal(string param_message);
-        void Message(string param_message, Enumerations::Logging_Level param_logging_level);
+        void Message(string param_message,   Logging_Level param_logging_level);
         ~Logging();
     private:
         string Log_Level_To_String(Logging_Level param_logging_level);

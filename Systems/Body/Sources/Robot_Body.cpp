@@ -10,18 +10,8 @@ Systems::Body::Robot_Body::Robot_Body(const std::map <string, Body_Part> &bodyPa
 
 Systems::Body::Robot_Body::Robot_Body() {
 
-    cout << "Setting Body parts" << endl;
-    setBodyPart("Neck", *new Body_Part());
-    setBodyPart("Chest", *new Body_Part());
-    setBodyPart("Right Arm", *new Body_Part());
-    setBodyPart("Left Arm", *new Body_Part());
-    setBodyPart("Hips", *new Body_Part());
-    setBodyPart("Right Leg", *new Body_Part());
-    setBodyPart("Left Leg", *new Body_Part());
-    setBodyPart("Right Foot", *new Body_Part());
-    setBodyPart("Left Foot", *new Body_Part());
 
-    this->body_parts.clear();
+      logger.Info("Setting the body parts");
 
 }
 

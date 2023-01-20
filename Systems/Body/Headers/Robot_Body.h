@@ -6,9 +6,11 @@
 #define SPENCER_ROBOT_BODY_H
 
 #include <iostream>
+#include "Utililties/Headers/Logging.h"
 #include "Body_Part.h"
 
 using namespace std;
+using namespace Utilities;
 
 namespace Systems {
     namespace Body {
@@ -19,7 +21,12 @@ namespace Systems {
                 /**
                  * List of named body parts
                  */
-                map<string, Body_Part> body_parts;
+                map<string, Systems::Body::Body_Part> body_parts;
+
+                /**
+                 * Logger
+                 */
+                 Logging logger;
         public:
 
             Robot_Body();

@@ -23,27 +23,27 @@ void Logging::Trace(string param_message) {
     this->Message(param_message, Logging_Level::Trace);
 }
 
-void Perception_Logger::Debug(string param_message) {
+void Logging::Debug(string param_message) {
     this->Message(param_message, Logging_Level::Debug);
 }
 
-void Perception_Logger::Info(string param_message) {
+void Logging::Info(string param_message) {
     this->Message(param_message, Logging_Level::Info);
 }
 
-void Perception_Logger::Warning(string param_message) {
+void Logging::Warning(string param_message) {
     this->Message(param_message, Logging_Level::Warning);
 }
 
-void Perception_Logger::Error(string param_message) {
+void Logging::Error(string param_message) {
     this->Message(param_message, Logging_Level::Error);
 }
 
-void Perception_Logger::Fatal(string param_message) {
+void Logging::Fatal(string param_message) {
     this->Message(param_message, Logging_Level::Fatal);
 }
 
-string Perception_Logger::Determine_Log_Level_Color(Logging_Level param_logging_level) {
+string Logging::Determine_Log_Level_Color(Logging_Level param_logging_level) {
     switch (param_logging_level) {
         case Logging_Level::Trace:
             return  RESET;
@@ -68,7 +68,7 @@ string Perception_Logger::Determine_Log_Level_Color(Logging_Level param_logging_
     }
 }
 
-string Perception_Logger::Log_Level_To_String(Logging_Level param_logging_level) {
+string Logging::Log_Level_To_String(Logging_Level param_logging_level) {
     switch (param_logging_level) {
         case Logging_Level::Trace:
             return "Trace";
@@ -93,7 +93,7 @@ string Perception_Logger::Log_Level_To_String(Logging_Level param_logging_level)
     }
 }
 
-void Perception_Logger::Message(string param_message, Logging_Level param_logging_level) {
+void Logging::Message(string param_message, Logging_Level param_logging_level) {
     auto tt = time(nullptr);
     auto* ti = localtime(&tt);
     std::stringstream time_stamp;
@@ -106,4 +106,6 @@ void Perception_Logger::Message(string param_message, Logging_Level param_loggin
     }
 }
 
-Perception_Logger::~Perception_Logger() {}
+Logging::~Logging() {
+    cout << "Destroying the Logger" << endl;
+}

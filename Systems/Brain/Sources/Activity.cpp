@@ -7,29 +7,36 @@
 
 
 void Systems::Brain::Activity::Run( ) {
-  cout << "Running" << endl;
+
+  Logging logger;
+  logger.Info("Activating All Systems");
   Activate_Thinking();
   Activate_Vision();
   Activate_Motion();
 }
 
 void Systems::Brain::Activity::Activate_Vision() {
-    cout << "Activating Vision System." << endl;
-
+    Logging logger;
+    logger.Info("Activating Vision System." );
     Systems::Vision vision;
 }
 
 void Systems::Brain::Activity::Activate_Motion() {
-    cout << "Activating Motion System." << endl;
+    Logging logger;
+    logger.Info("Activating Motion System." );
+
     Systems::Body::Motion motion;
 }
 
 void Systems::Brain::Activity::Activate_Thinking() {
-    cout << "Activating Thinking System." << endl;
+     Logging logger;
+    logger.Info("Activating Thinking System." );
+
 
 }
 
 void Systems::Brain::Activity::Activate_Hearing() {
-    cout << "Activating Thinking System." << endl;
+    Logging logger;
+    logger.Info("Activating Hearing System." );
 
 }
