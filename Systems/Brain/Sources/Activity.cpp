@@ -21,7 +21,7 @@ void Systems::Brain::Activity::Activate_Vision() {
 
 void Systems::Brain::Activity::Activate_Motion() {
     cout << "Activating Motion System." << endl;
-    Systems::Movement::Motion motion;
+    Systems::Body::Motion motion;
 }
 
 void Systems::Brain::Activity::Activate_Thinking() {

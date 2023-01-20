@@ -7,13 +7,13 @@
 
 #include <iostream>
 #include <map>
-#include "Motion_Base.h"
+#include "Motion/Headers/Motion_Base.h"
 #include "Motor.h"
 
 using namespace std;
 
 namespace Systems {
-    namespace Movement {
+    namespace Body {
         class Joint : public Motion_Base {
 
             private:

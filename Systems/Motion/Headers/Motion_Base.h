@@ -8,7 +8,7 @@
 
 using namespace std;
 namespace Systems {
-    namespace Movement {
+    namespace Body {
         
         class Motion_Base {
 

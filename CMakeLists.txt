@@ -3,7 +3,7 @@ project(Spencer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Spencer  Spencer.cpp Systems/Base/Headers/System_Base.h Systems/Base/Sources/System_Base.cpp Systems/Brain/Headers/Activity.h Systems/Brain/Sources/Activity.cpp Systems/Vision/Headers/Vision.h Systems/Vision/Sources/Vision.cpp Systems/Motion/Headers/Motion.h Systems/Motion/Sources/Motion.cpp Tests/BaseTests.cpp Systems/Motion/Headers/Joint.h Systems/Motion/Headers/Motor.h Systems/Motion/Sources/Joint.cpp Systems/Motion/Sources/Motor.cpp Systems/Motion/Headers/Motion_Base.h Systems/Motion/Sources/Motion_Base.cpp Systems/Motion/Headers/Body_Part.h Systems/Motion/Sources/Body_Part.cpp Systems/Utililties/Headers/Logging.h Systems/Utililties/Sources/Logging.cpp)
+add_executable(Spencer  Spencer.cpp Systems/Base/Headers/System_Base.h Systems/Base/Sources/System_Base.cpp Systems/Brain/Headers/Activity.h Systems/Brain/Sources/Activity.cpp Systems/Vision/Headers/Vision.h Systems/Vision/Sources/Vision.cpp Systems/Motion/Headers/Motion.h Systems/Motion/Sources/Motion.cpp Tests/BaseTests.cpp Systems/Body/Headers/Joint.h Systems/Body/Headers/Motor.h Systems/Body/Sources/Joint.cpp Systems/Body/Sources/Motor.cpp Systems/Motion/Headers/Motion_Base.h Systems/Motion/Sources/Motion_Base.cpp Systems/Body/Headers/Body_Part.h Systems/Body/Sources/Body_Part.cpp Systems/Utililties/Headers/Logging.h Systems/Utililties/Sources/Logging.cpp Systems/Body/Sources/Robot_Body.cpp Systems/Body/Headers/Robot_Body.h)
 
 target_include_directories(Spencer PUBLIC  Systems)
 

@@ -91,19 +91,19 @@ build CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj: CXX_COMPILER__Spencer_Debu
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Tests
 
-build CMakeFiles/Spencer.dir/Systems/Motion/Sources/Joint.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Motion/Sources/Joint.cpp || cmake_object_order_depends_target_Spencer
-  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Motion\Sources\Joint.cpp.obj.d
+build CMakeFiles/Spencer.dir/Systems/Body/Sources/Joint.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Body/Sources/Joint.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Body\Sources\Joint.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\Spencer.dir
-  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Motion\Sources
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Body\Sources
 
-build CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motor.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Motion/Sources/Motor.cpp || cmake_object_order_depends_target_Spencer
-  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Motion\Sources\Motor.cpp.obj.d
+build CMakeFiles/Spencer.dir/Systems/Body/Sources/Motor.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Body/Sources/Motor.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Body\Sources\Motor.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\Spencer.dir
-  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Motion\Sources
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Body\Sources
 
 build CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion_Base.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Motion/Sources/Motion_Base.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Systems\Motion\Sources\Motion_Base.cpp.obj.d
@@ -112,12 +112,12 @@ build CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion_Base.cpp.obj: CXX_COM
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Motion\Sources
 
-build CMakeFiles/Spencer.dir/Systems/Motion/Sources/Body_Part.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Motion/Sources/Body_Part.cpp || cmake_object_order_depends_target_Spencer
-  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Motion\Sources\Body_Part.cpp.obj.d
+build CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Body/Sources/Body_Part.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Body\Sources\Body_Part.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\Spencer.dir
-  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Motion\Sources
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Body\Sources
 
 build CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Utililties/Sources/Logging.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Systems\Utililties\Sources\Logging.cpp.obj.d
@@ -125,6 +125,13 @@ build CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj: CXX_COM
   INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Utililties\Sources
+
+build CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Body/Sources/Robot_Body.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Body\Sources\Robot_Body.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = CMakeFiles\Spencer.dir
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Body\Sources
 
 
 # =============================================================================
@@ -134,7 +141,7 @@ build CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj: CXX_COM
 #############################################
 # Link the executable Spencer.exe
 
-build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Joint.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motor.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Body_Part.cpp.obj CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Joint.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Motor.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest_maind.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Spencer.dir

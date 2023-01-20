@@ -5,14 +5,14 @@
 #ifndef SPENCER_BODY_PART_H
 #define SPENCER_BODY_PART_H
 
-#include "Motion_Base.h"
+#include "Motion/Headers/Motion_Base.h"
 #include "Joint.h"
 #include <map>
 
 using namespace std;
 
 namespace Systems {
-    namespace Movement {
+    namespace Body {
         class Body_Part : public Motion_Base {
 
             private:
