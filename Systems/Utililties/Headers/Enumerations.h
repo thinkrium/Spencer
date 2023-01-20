@@ -43,6 +43,9 @@ namespace Utilities {
         right_hand_pinky
     };
 
+    enum Joints {
+        knee, elbow, wrist, top_knuckle, middle_knuckle, low_knuckle, ankle
+    };
 
     enum Logging_Level {
         Trace,
@@ -51,6 +54,10 @@ namespace Utilities {
         Warning,
         Error,
         Fatal
+    };
+
+    enum Joint_Axis {
+        W, X, Y, Z
     };
 }
 #endif

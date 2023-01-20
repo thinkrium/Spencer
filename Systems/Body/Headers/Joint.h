@@ -9,6 +9,7 @@
 #include <map>
 #include "Motion/Headers/Motion_Base.h"
 #include "Motor.h"
+#include "Utililties/Headers/Enumerations.h"
 
 using namespace std;
 
@@ -21,12 +22,36 @@ namespace Systems {
             /**
             * named list of motors
             */
-            map<string, Motor> motors;
+            map<Utilities::Joints, Motor> motors;
+           public:
 
-            public:
-                Joint();
+                 Joint();
+                 Joint(const string &name, const string &type, int id, const map<Utilities::Joints, Motor> &motors);
 
-                virtual ~Joint();
+                 explicit Joint(const map<Utilities::Joints, Motor> &motors);
+
+
+
+                    /**
+                     * Gets a single body part by name
+                     * @param bodyPartName
+                     * @return
+                     */
+                    Joint getJoint(Utilities::Joints jointName);
+
+                    /**
+                     * sets a single body part by name
+                     * @param bodyPartName
+                     * @param bodyPart
+                     */
+                    void setJoint(Utilities::Joints jointName, Joint joint);
+
+                    /**
+                     * Creates the list and calls Set Body parts to assign it to the
+                     * map
+                     */
+                    void generateJointList();
+                  virtual ~Joint();
         };
     }
 }

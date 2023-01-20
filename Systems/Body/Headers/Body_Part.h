@@ -56,6 +56,7 @@ namespace Systems {
                  */
                 Body_Part();
 
+
                 /**
                  * Creates a body part with name, id,and type
                  * @param name
@@ -64,7 +65,28 @@ namespace Systems {
                  */
                 Body_Part(const string &name, const string &type, int id);
 
-                /**
+
+            /**
+             * Gets a single body part by name
+             * @param bodyPartName
+             * @return
+             */
+            Joint getJoint(string bodyPartName);
+
+            /**
+             * sets a single body part by name
+             * @param bodyPartName
+             * @param bodyPart
+             */
+            void setJoint(string bodyPartName, Body_Part bodyPart);
+
+            /**
+             * Creates the list and calls Set Body parts to assign it to the
+             * map
+             */
+            void generateBodyPartList();
+
+            /**
                  * destroys body part to recover memory
                  */
                 virtual ~Body_Part();
