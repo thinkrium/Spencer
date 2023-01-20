@@ -47,6 +47,11 @@ namespace Systems {
              */
             void setBodyPart(string bodyPartName, Body_Part bodyPart);
 
+            /**
+             * Creates the list and calls Set Body parts to assign it to the
+             * map
+             */
+            void generateBodyPartList();
 
             const map<string, Body_Part> &getBodyParts() const;
 
