@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Utililties/Headers/Logging.h"
 #include "Body_Part.h"
+#include "Utililties/Headers/Enumerations.h"
 
 using namespace std;
 using namespace Utilities;
@@ -21,7 +22,7 @@ namespace Systems {
                 /**
                  * List of named body parts
                  */
-                map<string, Systems::Body::Body_Part> body_parts;
+                map<Utilities::Body_Parts, Systems::Body::Body_Part> body_parts;
 
                 /**
                  * Logger
@@ -31,21 +32,21 @@ namespace Systems {
 
             Robot_Body();
 
-            explicit Robot_Body(const map<string, Body_Part> &bodyParts);
+            explicit Robot_Body(const map<Utilities::Body_Parts, Body_Part> &bodyParts);
 
             /**
              * Gets a single body part by name
              * @param bodyPartName
              * @return
              */
-            Body_Part getBodyPart(string bodyPartName);
+            Body_Part getBodyPart(Utilities::Body_Parts bodyPartName);
 
             /**
              * sets a single body part by name
              * @param bodyPartName
              * @param bodyPart
              */
-            void setBodyPart(string bodyPartName, Body_Part bodyPart);
+            void setBodyPart(Utilities::Body_Parts bodyPartName, Body_Part bodyPart);
 
             /**
              * Creates the list and calls Set Body parts to assign it to the
@@ -53,9 +54,9 @@ namespace Systems {
              */
             void generateBodyPartList();
 
-            const map<string, Body_Part> &getBodyParts() const;
+            const map<Utilities::Body_Parts, Body_Part> &getBodyParts() const;
 
-            void setBodyParts(const map<string, Body_Part> &bodyParts);
+            void setBodyParts(const map<Utilities::Body_Parts, Body_Part> &bodyParts);
 
             virtual ~Robot_Body();
 
