@@ -32,6 +32,19 @@ void Systems::Body::Motion_Base::setId(int id) {
     Motion_Base::id = id;
 }
 
+string Systems::Body::Motion_Base::parseEnumerationAsName(const char* stringifiedEnumeration) {
+    string stringFromEnumeration = stringifiedEnumeration;
+    int last_scope_separator_index = stringFromEnumeration.find_last_of(":") + 1;
+    string enumerated_value = stringFromEnumeration.substr(last_scope_separator_index, stringFromEnumeration.size());
+    for(int i = 0; i < enumerated_value.size(); i++) {
+         char letter = enumerated_value[i];
+         if (letter == '_') {
+             enumerated_value[i] = ' ';
+         }
+    }
+    return  enumerated_value;
+}
+
 Systems::Body::Motion_Base::~Motion_Base() {
 
 }

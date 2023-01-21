@@ -5,28 +5,26 @@
 Systems::Body::Body_Part::Body_Part() {    cout << "Setting Body part" << endl;}
 
 
-const map<Utilities::Joints, Systems::Body::Joint> &Systems::Body::Body_Part::getJoints() const {
+const map<Utilities::Enumerated_Joints, Systems::Body::Joint> &Systems::Body::Body_Part::getJoints() const {
     return joints;
 }
 
-void Systems::Body::Body_Part::setJoints(const map<Utilities::Joints, Joint> &joints) {
+void Systems::Body::Body_Part::setJoints(const map<Utilities::Enumerated_Joints, Joint> &joints) {
     Body_Part::joints = joints;
 }
 
-void Systems::Body::Body_Part::setJoint(Utilities::Joints jointName, Joint joint) {
+void Systems::Body::Body_Part::setJoint(Utilities::Enumerated_Joints jointName, Joint joint) {
    this->joints[jointName] = joint;
 }
 
 
-Systems::Body::Joint Systems::Body::Body_Part::getJoint(Utilities::Joints jointName) {
+Systems::Body::Joint Systems::Body::Body_Part::getJoint(Utilities::Enumerated_Joints jointName) {
 
+    Joint joint;
+    return joint;
 }
 
 void Systems::Body::Body_Part::generateJointList() {
-
-    switch (this->getName()) {
-
-    }
 
 }
 

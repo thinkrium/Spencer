@@ -20,7 +20,7 @@ namespace Systems {
                 /**
                  * named list of joints
                  */
-                map<Utilities::Joints, Joint> joints;
+                map<Utilities::Enumerated_Joints, Joint> joints;
 
         public:
 
@@ -28,19 +28,19 @@ namespace Systems {
                  * Gets the joints included in this body part
                  * @return map of joints
                  */
-                const map <Utilities::Joints, Joint> &getJoints() const;
+                const map <Utilities::Enumerated_Joints, Joint> &getJoints() const;
 
                 /**
                  * Sets the joint map as 1 entity
                  * @param joints
                  */
-                void setJoints(const map <Utilities::Joints, Joint> &joints);
+                void setJoints(const map <Utilities::Enumerated_Joints, Joint> &joints);
 
                 /**
                  * Creates the joints on init
                  * @param joints
                  */
-                explicit Body_Part(const map<Utilities::Joints, Joint> &joints);
+                explicit Body_Part(const map<Utilities::Enumerated_Joints, Joint> &joints);
 
                 /**
                  * Creates an empty body part
@@ -56,14 +56,14 @@ namespace Systems {
                  * @param bodyPartName
                  * @return
                  */
-                Joint getJoint(Utilities::Joints jointName);
+                Joint getJoint(Utilities::Enumerated_Joints jointName);
 
                 /**
                  * sets a single body part by name
                  * @param bodyPartName
                  * @param bodyPart
                  */
-                void setJoint(Utilities::Joints jointName, Joint join);
+                void setJoint(Utilities::Enumerated_Joints jointName, Joint join);
 
                 /**
                  * Creates the list and calls Set Body parts to assign it to the

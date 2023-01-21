@@ -40,11 +40,13 @@ namespace Systems {
 
                 Motion_Base(const string &name, const string &type, int id);
 
-            explicit Motion_Base(const string &name);
+                explicit Motion_Base(const string &name);
 
-            Motion_Base();
+                Motion_Base();
 
-            virtual ~Motion_Base();
+                string parseEnumerationAsName(const char* stringifiedEnumeration);
+
+                virtual ~Motion_Base();
         };
     }
     

@@ -5,7 +5,11 @@
 
 #ifndef SPENCER_ENUMERATIONS_H
 #define SPENCER_ENUMERATIONS_H
+
 namespace Utilities {
+
+    #define Enumeration_As_String( enumeration ) #enumeration
+
     /**
     * These are enumerated for later use if I decide to move
     * away from string descriptions
@@ -43,11 +47,11 @@ namespace Utilities {
         right_hand_pinky
     };
 
-    enum Joints {
+    enum Enumerated_Joints {
         knee, elbow, wrist, top_knuckle, middle_knuckle, low_knuckle, ankle
     };
 
-    enum Logging_Level {
+    enum Enumerated_Logging_Level {
         Trace,
         Debug,
         Info,
@@ -56,8 +60,9 @@ namespace Utilities {
         Fatal
     };
 
-    enum Joint_Axis {
+    enum Enumerated_Joint_Axis {
         W, X, Y, Z
     };
+
 }
 #endif

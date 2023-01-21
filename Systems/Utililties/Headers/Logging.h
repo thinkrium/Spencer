@@ -25,11 +25,11 @@ namespace Utilities {
         void Warning(string param_message);
         void Error(string param_message);
         void Fatal(string param_message);
-        void Message(string param_message,   Logging_Level param_logging_level);
+        void Message(string param_message, Enumerated_Logging_Level param_logging_level);
         ~Logging();
     private:
-        string Log_Level_To_String(Logging_Level param_logging_level);
-        string Determine_Log_Level_Color(Logging_Level param_logging_level);
+        string Log_Level_To_String(Enumerated_Logging_Level param_logging_level);
+        string Determine_Log_Level_Color(Enumerated_Logging_Level param_logging_level);
         fstream file;
         string fileName;
         bool toFile;

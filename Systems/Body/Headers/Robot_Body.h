@@ -9,13 +9,14 @@
 #include "Utililties/Headers/Logging.h"
 #include "Body_Part.h"
 #include "Utililties/Headers/Enumerations.h"
+#include "Motion/Headers/Motion_Base.h"
 
 using namespace std;
 using namespace Utilities;
 
 namespace Systems {
     namespace Body {
-        class Robot_Body {
+        class Robot_Body : Motion_Base {
 
             private:
 
@@ -53,13 +54,6 @@ namespace Systems {
              * map
              */
             void generateBodyPartList();
-
-            /**
-             * Takes the enumerated part name and creates a string equivalent
-             * @param partName
-             * @return
-             */
-            string parseBodyPartNameFromEnum(Utilities::Body_Parts partName);
 
             const map<Utilities::Body_Parts, Body_Part> &getBodyParts() const;
 
