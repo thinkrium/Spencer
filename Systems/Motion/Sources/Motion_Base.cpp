@@ -46,7 +46,9 @@ string Systems::Body::Motion_Base::parseEnumerationAsName(const char* stringifie
 }
 
 Systems::Body::Motion_Base::~Motion_Base() {
-
+        cout << "I am destroying a " << this->name << endl;
 }
 
-Systems::Body::Motion_Base::Motion_Base(const string &name) : name(name) {}
+Systems::Body::Motion_Base::Motion_Base(const string &name) : name(name) {
+    this->name = name;
+}
