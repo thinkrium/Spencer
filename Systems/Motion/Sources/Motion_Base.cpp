@@ -35,3 +35,5 @@ void Systems::Body::Motion_Base::setId(int id) {
 Systems::Body::Motion_Base::~Motion_Base() {
 
 }
+
+Systems::Body::Motion_Base::Motion_Base(const string &name) : name(name) {}

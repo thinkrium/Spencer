@@ -31,7 +31,6 @@ namespace Systems {
                  explicit Joint(const map<Utilities::Joints, Motor> &motors);
 
 
-
                     /**
                      * Gets a single body part by name
                      * @param bodyPartName
@@ -51,7 +50,8 @@ namespace Systems {
                      * map
                      */
                     void generateJointList();
-                  virtual ~Joint();
+
+                   virtual ~Joint();
         };
     }
 }

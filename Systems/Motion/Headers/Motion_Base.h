@@ -40,7 +40,9 @@ namespace Systems {
 
                 Motion_Base(const string &name, const string &type, int id);
 
-                Motion_Base();
+            explicit Motion_Base(const string &name);
+
+            Motion_Base();
 
             virtual ~Motion_Base();
         };

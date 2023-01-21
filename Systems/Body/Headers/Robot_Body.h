@@ -54,6 +54,13 @@ namespace Systems {
              */
             void generateBodyPartList();
 
+            /**
+             * Takes the enumerated part name and creates a string equivalent
+             * @param partName
+             * @return
+             */
+            string parseBodyPartNameFromEnum(Utilities::Body_Parts partName);
+
             const map<Utilities::Body_Parts, Body_Part> &getBodyParts() const;
 
             void setBodyParts(const map<Utilities::Body_Parts, Body_Part> &bodyParts);

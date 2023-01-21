@@ -13,3 +13,14 @@ Systems::Body::Joint::Joint(const string &name, const string &type, int id, cons
         : Motion_Base(name, type, id), motors(motors) {}
 
 Systems::Body::Joint::Joint(const map<Utilities::Joints, Motor> &motors) : motors(motors) {}
+
+void Systems::Body::Joint::generateJointList() {
+
+}
+
+
+Systems::Body::Joint Systems::Body::Joint::getJoint(Utilities::Joints jointName) { }
+
+void Systems::Body::Joint::setJoint(Utilities::Joints jointName, Joint joint) {
+
+}

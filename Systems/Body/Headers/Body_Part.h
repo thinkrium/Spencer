@@ -20,7 +20,7 @@ namespace Systems {
                 /**
                  * named list of joints
                  */
-                map<string, Joint> joints;
+                map<Utilities::Joints, Joint> joints;
 
         public:
 
@@ -28,65 +28,50 @@ namespace Systems {
                  * Gets the joints included in this body part
                  * @return map of joints
                  */
-                const map <string, Joint> &getJoints() const;
+                const map <Utilities::Joints, Joint> &getJoints() const;
 
                 /**
                  * Sets the joint map as 1 entity
                  * @param joints
                  */
-                void setJoints(const map <string, Joint> &joints);
+                void setJoints(const map <Utilities::Joints, Joint> &joints);
 
                 /**
                  * Creates the joints on init
                  * @param joints
                  */
-                explicit Body_Part(const map<string, Joint> &joints);
-
-                /**
-                 * Initializes the name, type, and id of this body part as well as the map of joints
-                 * @param name
-                 * @param type
-                 * @param id
-                 * @param joints
-                 */
-                Body_Part(const string &name, const string &type, int id, const map<string, Joint> &joints);
+                explicit Body_Part(const map<Utilities::Joints, Joint> &joints);
 
                 /**
                  * Creates an empty body part
                  */
                 Body_Part();
 
+                 explicit Body_Part(const string &name);
+
+                 bool isBodyPart(Utilities::Body_Parts partName);
 
                 /**
-                 * Creates a body part with name, id,and type
-                 * @param name
-                 * @param type
-                 * @param id
+                 * Gets a single body part by name
+                 * @param bodyPartName
+                 * @return
                  */
-                Body_Part(const string &name, const string &type, int id);
+                Joint getJoint(Utilities::Joints jointName);
 
+                /**
+                 * sets a single body part by name
+                 * @param bodyPartName
+                 * @param bodyPart
+                 */
+                void setJoint(Utilities::Joints jointName, Joint join);
 
-            /**
-             * Gets a single body part by name
-             * @param bodyPartName
-             * @return
-             */
-            Joint getJoint(string bodyPartName);
+                /**
+                 * Creates the list and calls Set Body parts to assign it to the
+                 * map
+                 */
+                void generateJointList();
 
-            /**
-             * sets a single body part by name
-             * @param bodyPartName
-             * @param bodyPart
-             */
-            void setJoint(string bodyPartName, Body_Part bodyPart);
-
-            /**
-             * Creates the list and calls Set Body parts to assign it to the
-             * map
-             */
-            void generateBodyPartList();
-
-            /**
+                /**
                  * destroys body part to recover memory
                  */
                 virtual ~Body_Part();

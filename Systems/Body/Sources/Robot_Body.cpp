@@ -14,16 +14,21 @@ Systems::Body::Robot_Body::Robot_Body() {
     this->generateBodyPartList();
 }
 
+string Systems::Body::Robot_Body::parseBodyPartNameFromEnum(Utilities::Body_Parts partName) {
+
+    return "":
+}
+
 
 void Systems::Body::Robot_Body::generateBodyPartList() {
 
-    Body_Part left_eye;
+    Body_Part left_eye(parseBodyPartNameFromEnum(Utilities::Body_Parts::left_eye));
     this->setBodyPart(Utilities::Body_Parts::left_eye, left_eye);
-    Body_Part right_eye;
+    Body_Part right_eye(parseBodyPartNameFromEnum(Utilities::Body_Parts::right_eye));
     this->setBodyPart(Utilities::Body_Parts::right_eye, right_eye);
-    Body_Part head;
+    Body_Part head(parseBodyPartNameFromEnum(Utilities::Body_Parts::head));
     this->setBodyPart(Utilities::Body_Parts::head, head);
-    Body_Part neck;
+    Body_Part neck(parseBodyPartNameFromEnum(Utilities::Body_Parts::neck));
     this->setBodyPart(Utilities::Body_Parts::neck, neck);
     Body_Part chest;
     this->setBodyPart(Utilities::Body_Parts::chest, chest);
