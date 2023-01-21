@@ -16,7 +16,7 @@ Systems::Body::Robot_Body::Robot_Body() {
 
 string Systems::Body::Robot_Body::parseBodyPartNameFromEnum(Utilities::Body_Parts partName) {
 
-    return "":
+    return "";
 }
 
 
