@@ -15,7 +15,9 @@ namespace Systems {
        public:
                virtual ~Motor();
 
-               Motor();
+            explicit Motor(const string &name);
+
+            Motor();
        };
     }
 }

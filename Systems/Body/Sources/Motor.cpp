@@ -8,3 +8,5 @@ Systems::Body::Motor::Motor() {}
 Systems::Body::Motor::~Motor() {
 
 }
+
+Systems::Body::Motor::Motor(const string &name) : Motion_Base(name) {}

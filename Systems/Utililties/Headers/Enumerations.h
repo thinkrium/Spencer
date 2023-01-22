@@ -57,7 +57,7 @@ namespace Utilities {
         Fatal
     };
 
-    enum Enumerated_Joint_Axis {
+    enum Enumerated_Motor_Axis {
         W, X, Y, Z
     };
 

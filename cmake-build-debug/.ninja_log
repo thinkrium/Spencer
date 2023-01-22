@@ -47,3 +47,12 @@
 5244	7459	6961044142101706	CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj	d58ba1f70d4ec6a3
 6	1570	6961044774700239	CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj	c232b85bc00723f4
 1572	2235	6961044781389257	Spencer.exe	2ed3bd7c94966442
+22	3284	6961140897995922	CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj	9253c0e69b978900
+15	3295	6961140897667932	CMakeFiles/Spencer.dir/Spencer.cpp.obj	4592fbebc4a8f2ec
+28	3445	6961140898925427	CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj	9f546b3ecd4dc206
+3285	4555	6961140911225153	CMakeFiles/Spencer.dir/Systems/Body/Sources/Motor.cpp.obj	3a76f65cea115aee
+3295	5077	6961140916493471	CMakeFiles/Spencer.dir/Systems/Body/Sources/Joint.cpp.obj	9c230341c0bd5b1
+3445	5517	6961140920907912	CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj	d58ba1f70d4ec6a3
+4556	5708	6961140922946306	CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj	f01b421362e2a908
+5077	6415	6961140930013048	CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj	c232b85bc00723f4
+6416	6688	6961140932684292	Spencer.exe	2ed3bd7c94966442
