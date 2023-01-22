@@ -55,13 +55,21 @@ void Systems::Body::Body_Part::generateArmJoints() {
 
     // left arm
     if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_arm))) {
+        // elbow
         Joint left_elbow(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::elbow)));
         this->setJoint(Utilities::Enumerated_Joints::elbow, left_elbow );
+        // shoulder
+        Joint left_shoulder(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::shoulder)));
+        this->setJoint(Utilities::Enumerated_Joints::elbow, left_shoulder );
     }
     // right arm
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_arm))) {
+        // elbow
         Joint right_elbow(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::elbow)));
         this->setJoint(Utilities::Enumerated_Joints::elbow, right_elbow );
+        // shoulder
+        Joint right_shoulder(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::shoulder)));
+        this->setJoint(Utilities::Enumerated_Joints::elbow, right_shoulder );
     }
 }
 
@@ -111,7 +119,7 @@ void Systems::Body::Body_Part::generateLeftHandJoints() {
     // pointer middle knuckle
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_hand_pointer_finger))) {
         Joint left_hand_pointer_finger_middle_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::middle_knuckle)));
-        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, left_hand_pointer_finger_middle_knuckle );
+        this->setJoint(Utilities::Enumerated_Joints::middle_knuckle, left_hand_pointer_finger_middle_knuckle );
     }
     // pointer bottom knuckle
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_hand_pointer_finger))) {
@@ -145,8 +153,8 @@ void Systems::Body::Body_Part::generateLeftHandJoints() {
     }
     // ring bottom knuckle
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_hand_ring_finger))) {
-        Joint left_hand_thumb_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
-        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, left_hand_thumb_finger_top_knuckle );
+        Joint left_hand_ring_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, left_hand_ring_finger_bottom_knuckle );
     }
     // pinky top knuckle
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_hand_pinky_finger))) {
@@ -167,20 +175,88 @@ void Systems::Body::Body_Part::generateLeftHandJoints() {
 }
 
 void Systems::Body::Body_Part::generateRightHandJoints() {
+    // thumb top knuckle
     if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_thumb_finger))) {
         Joint right_hand_thumb_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
         this->setJoint(Utilities::Enumerated_Joints::top_knuckle, right_hand_thumb_finger_top_knuckle );
     }
+        // thumb bottom knuckle
     else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_thumb_finger))) {
         Joint right_hand_thumb_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
         this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, right_hand_thumb_finger_bottom_knuckle );
     }
+        // pointer top knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pointer_finger))) {
+        Joint right_hand_pointer_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, right_hand_pointer_finger_top_knuckle );
+    }
+        // pointer middle knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pointer_finger))) {
+        Joint right_hand_pointer_finger_middle_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::middle_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::middle_knuckle, right_hand_pointer_finger_middle_knuckle );
+    }
+        // pointer bottom knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pointer_finger))) {
+        Joint right_hand_pointer_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, right_hand_pointer_finger_bottom_knuckle );
+    }
+        // index top knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_index_finger))) {
+        Joint right_hand_index_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, right_hand_index_finger_top_knuckle );
+    }
+        // index middle knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_index_finger))) {
+        Joint right_hand_index_finger_middle_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::middle_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::middle_knuckle, right_hand_index_finger_middle_knuckle );
+    }
+        // index bottom knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_index_finger))) {
+        Joint right_hand_index_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, right_hand_index_finger_bottom_knuckle );
+    }
+        // ring top knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_ring_finger))) {
+        Joint right_hand_ring_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, right_hand_ring_finger_top_knuckle );
+    }
+        // ring middle knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_ring_finger))) {
+        Joint right_hand_ring_finger_middle_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::middle_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::middle_knuckle, right_hand_ring_finger_middle_knuckle );
+    }
+        // ring bottom knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_ring_finger))) {
+        Joint right_hand_ring_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, right_hand_ring_finger_bottom_knuckle );
+    }
+        // pinky top knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pinky_finger))) {
+        Joint right_hand_pinky_finger_top_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::top_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::top_knuckle, right_hand_pinky_finger_top_knuckle );
+    }
+        // pinky middle knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pinky_finger))) {
+        Joint right_hand_pinky_finger_middle_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::middle_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::middle_knuckle, right_hand_pinky_finger_middle_knuckle );
+    }
+        // pinky bottom knuckle
+    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_hand_pinky_finger))) {
+        Joint right_hand_pinky_finger_bottom_knuckle(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::bottom_knuckle)));
+        this->setJoint(Utilities::Enumerated_Joints::bottom_knuckle, right_hand_pinky_finger_bottom_knuckle );
+    }
+
 
 }
 
 void Systems::Body::Body_Part::generateTorsoJoints() {
+     if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::torso))) {
+        Joint chest(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::chest)));
+        this->setJoint(Utilities::Enumerated_Joints::chest, chest);
+    }
 
 }
+
 void Systems::Body::Body_Part::generateHipJoints() {}
 Systems::Body::Body_Part::~Body_Part() {
     cout << "Destroying Body Part Object" << endl;

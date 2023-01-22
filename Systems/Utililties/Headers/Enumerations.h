@@ -22,8 +22,7 @@ namespace Utilities {
         right_eye,
         head,
         neck,
-        chest,
-        abdomin,
+        torso,
         hips,
         left_leg,
         right_leg,
@@ -46,7 +45,7 @@ namespace Utilities {
     };
 
     enum Enumerated_Joints {
-        neck_joint, knee, elbow, wrist, top_knuckle, middle_knuckle, bottom_knuckle, ankle, toes
+        neck_joint, shoulder, knee, elbow, wrist, top_knuckle, middle_knuckle, bottom_knuckle, ankle, toes, chest, hip_joint
     };
 
     enum Enumerated_Logging_Level {
