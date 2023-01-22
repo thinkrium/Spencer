@@ -27,10 +27,8 @@ namespace Utilities {
         hips,
         left_leg,
         right_leg,
-        left_foot_above_toes,
-        right_foot_above_toes,
-        left_foot_toes_section,
-        right_foot_toes_section,
+        left_foot,
+        right_foot,
         left_arm,
         right_arm,
         left_hand,
@@ -48,7 +46,7 @@ namespace Utilities {
     };
 
     enum Enumerated_Joints {
-        knee, elbow, wrist, top_knuckle, middle_knuckle, low_knuckle, ankle
+        neck_joint, knee, elbow, wrist, top_knuckle, middle_knuckle, bottom_knuckle, ankle, toes
     };
 
     enum Enumerated_Logging_Level {

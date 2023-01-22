@@ -26,16 +26,14 @@ namespace Systems {
            public:
 
                  Joint();
-                 Joint(const string &name, const string &type, int id, const map<Utilities::Enumerated_Joints, Motor> &motors);
 
-                 explicit Joint(const map<Utilities::Enumerated_Joints, Motor> &motors);
+            explicit Joint(const string &name);
 
-
-                    /**
-                     * Gets a single body part by name
-                     * @param bodyPartName
-                     * @return
-                     */
+            /**
+             * Gets a single body part by name
+             * @param bodyPartName
+             * @return
+             */
                     Joint getJoint(Utilities::Enumerated_Joints jointName);
 
                     /**

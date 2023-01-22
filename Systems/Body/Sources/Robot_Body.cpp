@@ -55,20 +55,12 @@ void Systems::Body::Robot_Body::generateBodyPartList() {
     this->setBodyPart(Utilities::Body_Parts::right_leg, right_leg);
 
     // left foot above toes
-    Body_Part left_foot_above_toes(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_foot_above_toes )));
-    this->setBodyPart(Utilities::Body_Parts::left_foot_above_toes, left_foot_above_toes);
+    Body_Part left_foot(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_foot_above_toes )));
+    this->setBodyPart(Utilities::Body_Parts::left_foot, left_foot);
 
     // right foot above toes
-    Body_Part right_foot_above_toes(   parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_foot_above_toes)));
-    this->setBodyPart(Utilities::Body_Parts::right_foot_above_toes, right_foot_above_toes);
-
-    // left foot toes section
-    Body_Part left_foot_toes_section( parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_foot_toes_section)));
-    this->setBodyPart(Utilities::Body_Parts::left_foot_toes_section, left_foot_toes_section);
-
-    // right foot toes section
-    Body_Part right_foot_toes_section(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_foot_toes_section)));
-    this->setBodyPart(Utilities::Body_Parts::right_foot_toes_section, right_foot_toes_section);
+    Body_Part right_foot(   parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_foot_above_toes)));
+    this->setBodyPart(Utilities::Body_Parts::right_foot, right_foot);
 
     // left arm
     Body_Part left_arm( parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_arm)));

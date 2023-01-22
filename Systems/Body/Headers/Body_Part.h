@@ -49,6 +49,42 @@ namespace Systems {
 
                  explicit Body_Part(const string &name);
 
+                 /**
+                  * generate the hand joints;
+                  */
+                 void generateHandJoints();
+
+                /**
+                * generate the leg joints;
+                */
+                void generateLegJoints();
+
+                /**
+                 * generate the foot joints;
+                 */
+                 void generateFootJoints();
+
+                /**
+                 * generate the arm joints;
+                 */
+                 void generateArmJoints();
+
+                /**
+                 * generate the hip joints;
+                 */
+                 void generateHipJoints();
+
+                 /**
+                 * generate the neck joints;
+                 */
+                 void generateNeckJoints();
+
+                 void generateRightHandJoints();
+
+                 void generateLeftHandJoints();
+
+                 void generateTorsoJoints();
+
                  bool isBodyPart(Utilities::Body_Parts partName);
 
                 /**
