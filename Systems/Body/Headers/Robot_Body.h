@@ -57,9 +57,27 @@ namespace Systems {
 
             const map<Utilities::Body_Parts, Body_Part> &getBodyParts() const;
 
+            /**
+             * Sets the body parts as a whole in one shot
+             * @param bodyParts
+             */
             void setBodyParts(const map<Utilities::Body_Parts, Body_Part> &bodyParts);
 
+            /**
+             * Should be called on loop possibly on its own thread so that it can run
+             * at all times
+             *
+             * the parameter is a map that should be sent in as capitals for now
+             *
+             * this -> {X, value}
+             * not this -> {x, value}
+             * @param movementAxis
+             */
+            void moveByAxis(map<string, float> movementAxis);
+
             virtual ~Robot_Body();
+
+
 
         };
     }

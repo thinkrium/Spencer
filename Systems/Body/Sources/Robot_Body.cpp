@@ -139,3 +139,7 @@ const map<Utilities::Body_Parts, Systems::Body::Body_Part> &Systems::Body::Robot
 void Systems::Body::Robot_Body::setBodyParts(const map<Utilities::Body_Parts, Body_Part> &bodyParts) {
     body_parts = bodyParts;
 }
+
+void Systems::Body::Robot_Body::moveByAxis(map<string, float> movementAxis) {
+
+}

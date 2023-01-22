@@ -8,7 +8,8 @@
 Systems::Body::Motion::Motion() {
     // is the robots representation of a physical
     // body
-    Robot_Body robot;
+    Robot_Body robot_body;
+
 
 }
 
