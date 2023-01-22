@@ -34,13 +34,9 @@ void Systems::Body::Robot_Body::generateBodyPartList() {
     Body_Part neck(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::neck)));
     this->setBodyPart(Utilities::Body_Parts::neck, neck);
 
-    // chest
-    Body_Part chest(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::chest)));
-    this->setBodyPart(Utilities::Body_Parts::chest, chest);
-
-    // abdomin
-    Body_Part abdomin(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::abdomin )));
-    this->setBodyPart(Utilities::Body_Parts::abdomin, abdomin);
+    // torso
+    Body_Part torso(  parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::torso)));
+    this->setBodyPart(Utilities::Body_Parts::torso, torso);
 
     // hips
     Body_Part hips( parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::hips )));

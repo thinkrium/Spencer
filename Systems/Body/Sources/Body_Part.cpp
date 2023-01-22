@@ -29,6 +29,7 @@ void Systems::Body::Body_Part::generateJointList() {
      this->generateNeckJoints();
      this->generateTorsoJoints();
      this->generateArmJoints();
+     this->generateHandJoints();
      this->generateHipJoints();
      this->generateLegJoints();
      this->generateFootJoints();
@@ -53,23 +54,16 @@ void Systems::Body::Body_Part::generateFootJoints() {
 
 void Systems::Body::Body_Part::generateArmJoints() {
 
-    // left arm
-    if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_arm))) {
+    string right_arm = parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_arm));
+    string left_arm = parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_arm));
+    // arm
+    if(this->getName() == right_arm || this->getName() == left_arm ) {
         // elbow
-        Joint left_elbow(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::elbow)));
-        this->setJoint(Utilities::Enumerated_Joints::elbow, left_elbow );
+        Joint elbow(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::elbow)));
+        this->setJoint(Utilities::Enumerated_Joints::elbow, elbow );
         // shoulder
-        Joint left_shoulder(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::shoulder)));
-        this->setJoint(Utilities::Enumerated_Joints::elbow, left_shoulder );
-    }
-    // right arm
-    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_arm))) {
-        // elbow
-        Joint right_elbow(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::elbow)));
-        this->setJoint(Utilities::Enumerated_Joints::elbow, right_elbow );
-        // shoulder
-        Joint right_shoulder(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::shoulder)));
-        this->setJoint(Utilities::Enumerated_Joints::elbow, right_shoulder );
+        Joint shoulder(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::shoulder)));
+        this->setJoint(Utilities::Enumerated_Joints::elbow, shoulder );
     }
 }
 
@@ -82,15 +76,14 @@ void Systems::Body::Body_Part::generateNeckJoints() {
 
 void Systems::Body::Body_Part::generateLegJoints() {
 
+
+    string right_leg = parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_leg));
+    string left_leg = parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_leg));
+
     // left leg
-    if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::left_leg))) {
-        Joint left_knee(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::knee)));
-        this->setJoint(Utilities::Enumerated_Joints::knee, left_knee );
-    }
-    // right leg
-    else if(this->getName() == parseEnumerationAsName(Enumeration_As_String(Utilities::Body_Parts::right_leg))) {
-        Joint right_knee(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::knee)));
-        this->setJoint(Utilities::Enumerated_Joints::knee, right_knee);
+    if(this->getName() == left_leg || this->getName() == right_leg ) {
+        Joint knee(parseEnumerationAsName(Enumeration_As_String(Utilities::Enumerated_Joints::knee)));
+        this->setJoint(Utilities::Enumerated_Joints::knee, knee );
     }
 
 }
