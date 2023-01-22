@@ -140,12 +140,12 @@ build CMakeFiles/Spencer.dir/Systems/Brain/Sources/Sensor.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\Spencer.dir
   OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Brain\Sources
 
-build CMakeFiles/Spencer.dir/Systems/Brain/Sources/Brain_Base.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Brain/Sources/Brain_Base.cpp || cmake_object_order_depends_target_Spencer
-  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Brain\Sources\Brain_Base.cpp.obj.d
+build CMakeFiles/Spencer.dir/Systems/Base/Sources/Brain_Base.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Sources/Brain_Base.cpp || cmake_object_order_depends_target_Spencer
+  DEP_FILE = CMakeFiles\Spencer.dir\Systems\Base\Sources\Brain_Base.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I"C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/Systems" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "C:/Thinkrium/Robotics/Source Code/CPP/Robot/V1/Operating_System/Spencer/cmake-build-debug/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\Spencer.dir
-  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Brain\Sources
+  OBJECT_FILE_DIR = CMakeFiles\Spencer.dir\Systems\Base\Sources
 
 build CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj: CXX_COMPILER__Spencer_Debug C$:/Thinkrium/Robotics/Source$ Code/CPP/Robot/V1/Operating_System/Spencer/Systems/Base/Sources/Base.cpp || cmake_object_order_depends_target_Spencer
   DEP_FILE = CMakeFiles\Spencer.dir\Systems\Base\Sources\Base.cpp.obj.d
@@ -162,7 +162,7 @@ build CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj: CXX_COMPILER__Sp
 #############################################
 # Link the executable Spencer.exe
 
-build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Joint.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Motor.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Motion_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Sensor.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Brain_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+build Spencer.exe: CXX_EXECUTABLE_LINKER__Spencer_Debug CMakeFiles/Spencer.dir/Spencer.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/System_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Activity.cpp.obj CMakeFiles/Spencer.dir/Systems/Vision/Sources/Vision.cpp.obj CMakeFiles/Spencer.dir/Systems/Motion/Sources/Motion.cpp.obj CMakeFiles/Spencer.dir/Tests/BaseTests.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Joint.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Motor.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Motion_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Body_Part.cpp.obj CMakeFiles/Spencer.dir/Systems/Utililties/Sources/Logging.cpp.obj CMakeFiles/Spencer.dir/Systems/Body/Sources/Robot_Body.cpp.obj CMakeFiles/Spencer.dir/Systems/Brain/Sources/Sensor.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Brain_Base.cpp.obj CMakeFiles/Spencer.dir/Systems/Base/Sources/Base.cpp.obj | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest_maind.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Spencer.dir
