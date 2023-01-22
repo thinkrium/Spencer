@@ -7,7 +7,7 @@ using namespace std;
 #ifndef SPENCER_MOTOR_H
 #define SPENCER_MOTOR_H
 
-#include "Motion/Headers/Motion_Base.h"
+#include "Base/Headers/Motion_Base.h"
 
 namespace Systems {
     namespace Body {
@@ -18,7 +18,8 @@ namespace Systems {
             explicit Motor(const string &name);
 
             Motor();
-       };
+
+        };
     }
 }
 

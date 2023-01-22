@@ -9,7 +9,7 @@
 #include "Utililties/Headers/Logging.h"
 #include "Body_Part.h"
 #include "Utililties/Headers/Enumerations.h"
-#include "Motion/Headers/Motion_Base.h"
+#include "Base/Headers/Motion_Base.h"
 
 using namespace std;
 using namespace Utilities;
@@ -74,6 +74,16 @@ namespace Systems {
              * @param movementAxis
              */
             void moveByAxis(map<string, float> movementAxis);
+
+            /**
+             *
+             * the parameter is a map that should be sent in as capitals for now
+             *
+             * this -> {X, value}
+             * not this -> {x, value}
+             * @param movementAxis
+             */
+            void leanTowards(map<string, float> movementAxis);
 
             virtual ~Robot_Body();
 

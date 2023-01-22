@@ -5,7 +5,7 @@
 #ifndef SPENCER_BODY_PART_H
 #define SPENCER_BODY_PART_H
 
-#include "Motion/Headers/Motion_Base.h"
+#include "Base/Headers/Motion_Base.h"
 #include "Joint.h"
 #include <map>
 

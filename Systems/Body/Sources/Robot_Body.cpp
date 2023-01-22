@@ -141,5 +141,10 @@ void Systems::Body::Robot_Body::setBodyParts(const map<Utilities::Body_Parts, Bo
 }
 
 void Systems::Body::Robot_Body::moveByAxis(map<string, float> movementAxis) {
+    this->leanTowards(movementAxis);
+}
+
+void Systems::Body::Robot_Body::leanTowards(map<string, float> movementAxis) {
 
 }
+
